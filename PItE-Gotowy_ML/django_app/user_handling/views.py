@@ -105,6 +105,6 @@ def history(request):
             hist_list=txt.split(',')
             hist_list=hist_list[1:]
             beer_list=[Beer.objects.get(id=i) for i in pd.unique(hist_list)]
-        return render(request, 'beerhistory.html', {'username':request.user.username, 'history': beer_list})
+        return render(request, 'BeerHistory.html', {'username':request.user.username, 'history': beer_list})
     else:
         return render(request, 'BeerHistory.html', {'error_message':'No user logged in'})
