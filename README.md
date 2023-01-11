@@ -1,1 +1,1 @@
-Final version is: dinal_ver.zip
+Final version is: final_ver.zip
